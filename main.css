@@ -64,6 +64,7 @@ h2 {
  font-size: 34px;
  position: relative;
  z-index: 99;
+ margin: 5px 0;
 }
 
 .billShadow{
@@ -81,4 +82,8 @@ h2 {
 #bills {
  position: relative;
  margin-top: 10px;
+}
+
+p {
+ font-size: 20px;
 }

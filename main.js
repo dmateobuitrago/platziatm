@@ -52,7 +52,7 @@ class Atm{
    var billsToDeliver = [];
 
    bills.forEach(bill => {
-    if(leftMoneyToDeliver > 0){
+    if(leftMoneyToDeliver > 0 && leftMoneyToDeliver >= bill.value){
 
       var deliverBillsQuantity = Math.floor(leftMoneyToDeliver/bill.value);
 
@@ -140,6 +140,7 @@ class Atm{
   }
 
   document.getElementById('errorMessage').innerHTML = message;
+  document.getElementById('bills').innerHTML =  "";
 
  }
 }
